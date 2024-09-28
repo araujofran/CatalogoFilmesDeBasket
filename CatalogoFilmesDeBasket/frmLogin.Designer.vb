@@ -23,29 +23,29 @@ Partial Class frmLogin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogin))
-        Me.btn_entrar = New System.Windows.Forms.Button()
+        Me.btn_login = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_usuario = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt_senha = New System.Windows.Forms.TextBox()
         Me.btn_fechar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'btn_entrar
+        'btn_login
         '
-        Me.btn_entrar.BackColor = System.Drawing.Color.Transparent
-        Me.btn_entrar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_entrar.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_entrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btn_entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_entrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_entrar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btn_entrar.Location = New System.Drawing.Point(29, 389)
-        Me.btn_entrar.Name = "btn_entrar"
-        Me.btn_entrar.Size = New System.Drawing.Size(83, 30)
-        Me.btn_entrar.TabIndex = 0
-        Me.btn_entrar.Text = "Entrar"
-        Me.btn_entrar.UseVisualStyleBackColor = False
+        Me.btn_login.BackColor = System.Drawing.Color.Transparent
+        Me.btn_login.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_login.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btn_login.Location = New System.Drawing.Point(29, 389)
+        Me.btn_login.Name = "btn_login"
+        Me.btn_login.Size = New System.Drawing.Size(83, 30)
+        Me.btn_login.TabIndex = 0
+        Me.btn_login.Text = "Entrar"
+        Me.btn_login.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -79,14 +79,14 @@ Partial Class frmLogin
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Senha"
         '
-        'TextBox1
+        'txt_senha
         '
-        Me.TextBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.TextBox1.Location = New System.Drawing.Point(102, 322)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox1.Size = New System.Drawing.Size(162, 20)
-        Me.TextBox1.TabIndex = 5
+        Me.txt_senha.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.txt_senha.Location = New System.Drawing.Point(102, 322)
+        Me.txt_senha.Name = "txt_senha"
+        Me.txt_senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_senha.Size = New System.Drawing.Size(162, 20)
+        Me.txt_senha.TabIndex = 5
         '
         'btn_fechar
         '
@@ -112,11 +112,11 @@ Partial Class frmLogin
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btn_fechar)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_senha)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txt_usuario)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btn_entrar)
+        Me.Controls.Add(Me.btn_login)
         Me.Name = "frmLogin"
         Me.Text = "Login"
         Me.ResumeLayout(False)
@@ -124,10 +124,10 @@ Partial Class frmLogin
 
     End Sub
 
-    Friend WithEvents btn_entrar As Button
+    Friend WithEvents btn_login As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents txt_usuario As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_senha As TextBox
     Friend WithEvents btn_fechar As Button
 End Class
